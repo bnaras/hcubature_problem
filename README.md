@@ -1,5 +1,12 @@
 # hcubature_problem
-Hcubature hangs on this example
+
+Hcubature hangs on this example here, both on Macs and Unix (Ubuntu
+Xenial, for example). Pcubature works, though. I provide both
+examples. 
+
+I am using the (official) 1.0.3 version of the cubature library from
+the [here](https://github.com/stevengj/cubature).
+
 ```
 gcc -g -o test_hc -DCUBATURE=hcubature test_hc.c hcubature.c pcubature.c -lm
 hcubature.c:920:15: warning: comparison of unsigned enum expression < 0 is always false [-Wtautological-compare]
